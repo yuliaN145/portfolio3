@@ -1,0 +1,49 @@
+.skills {
+    padding-bottom: 109px;
+    @include mobile-tablet {
+        padding-bottom: 179px;
+    }
+}
+.skills__title {
+    text-align: center;
+}
+.skills__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-left: 16px;
+    padding-right: 14px;
+    >* {
+        flex-basis: 288px;
+        & h4 {
+            padding-bottom: 20px;
+            @include mobile-tablet {
+                padding-bottom: 23px;
+            }
+        }
+        & p {
+            @extend %font-inter;
+            @include font ($size: 1.8rem, $style: normal, $weight: 400, $height: 3.6rem);
+            padding: 0;
+            margin: 0;
+            @include mobile-tablet {
+                @include font ($size: 1.8rem, $style: normal, $weight: 400, $height: 2.1rem);
+            }
+        }
+        & p:last-child {
+            padding-right: 3px;
+        }
+    }
+    @include mobile-tablet {
+        padding-left: 7px;
+        padding-right: 10px;
+        row-gap: 75px;
+    }
+}
+.skill__icon {
+    padding-bottom: 50px;
+    @include mobile-tablet {
+        padding-bottom: 28px;
+    }
+}

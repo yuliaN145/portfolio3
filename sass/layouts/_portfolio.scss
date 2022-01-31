@@ -1,0 +1,26 @@
+.img__1row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    padding-bottom: 25px;
+    @include mobile-tablet {
+        row-gap: 25px;
+    }
+}
+.img__2row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    padding-bottom: 100px;
+    @include mobile-tablet {
+        row-gap: 25px;
+    }
+}
+.portfolio__img {
+    @include mobile-tablet {
+        padding-left: 99px;
+
+    }
+}

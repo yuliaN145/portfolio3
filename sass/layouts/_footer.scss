@@ -1,0 +1,116 @@
+footer {
+    border-color: $color-background;
+}
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 49px;
+    align-items: center;
+    padding-bottom: 50px;
+    color: $color-text;
+    @extend %font-inter;
+    @include font ($size: 2.0rem, $style: normal, $weight: 400,$height: 5.0rem);
+    & a {
+        color: $color-text;
+        text-decoration: none;
+    }
+    >* {
+        flex-basis: 17%;
+        @include mobile-tablet {
+            flex-basis: 0;
+        }
+    }
+    @include mobile-tablet {
+        @include font ($size: 2.0rem, $style: normal, $weight: 400,$height: 2.4rem);
+        padding-top: 27px;
+        text-align: center;
+        display: block;
+    }
+}
+.github {
+    @include mobile-tablet {
+        padding-bottom: 17px;
+    }
+    & a {
+        padding-left: 16px;
+    }
+}
+.github__icon {
+        padding-right: 15px;
+}
+.rss {
+    & span {
+        padding-left: 17px;
+        @include mobile-tablet {
+            padding-left: 0;
+        }
+    }
+    @include mobile-tablet {
+        padding-bottom: 23px;
+    }
+}
+.social {
+    @include mobile-tablet {
+        width: 188px;
+        padding-left: 174px;
+    }
+}
+.social__link {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding-top: 8px;
+        & li {
+            padding-right: 5px;
+            padding-left: 19px;
+        }
+}
+
+
+
+.icon__inst {
+    background-image: url(/portfolio3/img/icon-inst.svg);
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+.icon__inst:hover {
+    background-image: url(/portfolio3/img/icon-inst2.svg);
+    transition: 2s;
+}
+.icon__facebook {
+    background-image: url(/portfolio3/img/icon-facebook.svg);
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+.icon__facebook:hover {
+    background-image: url(/portfolio3/img/icon-facebook2.svg);
+    transition: 2s;
+}
+.icon__twitter {
+    background-image: url(/portfolio3/img/icon-twitter.svg);
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+.icon__twitter:hover {
+    background-image: url(/portfolio3/img/icon-twitter2.svg);
+    transition: 2s;
+}
+.icon__pin {
+    background-image: url(/portfolio3/img/icon-pin.svg);
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+.icon__pin:hover {
+    background-image: url(/portfolio3/img/icon-pin2.svg);
+    transition: 2s;
+}

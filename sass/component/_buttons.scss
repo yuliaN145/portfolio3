@@ -1,0 +1,180 @@
+//header-buttons
+.button {
+    @extend %font-inter;
+    @include font ($size: 2.0rem, $style: normal, $weight: 700, $height: 5.0rem);
+    border: none;
+    background-color: transparent;
+    color: $color-text;
+    &:hover {
+        color: $color-buttons;
+        cursor: pointer;
+    }
+    padding-left: 17px;
+    padding-right: 0;
+}
+.button-lang-en {
+    @extend %font-inter;
+    @include font ($size: 2.0rem, $style: normal, $weight: 700, $height: 5.0rem);
+    border: none;
+    background-color: transparent;
+    color: $color-text;
+    /*&:hover {
+        color: $color-buttons;
+        cursor: pointer;
+    }*/ 
+    padding-left: 17px;
+    padding-right: 0;
+}
+.button-lang-en.active {
+    color: $color-buttons;
+}
+.button-lang-ru {
+    @extend %font-inter;
+    @include font ($size: 2.0rem, $style: normal, $weight: 700, $height: 5.0rem);
+    border: none;
+    background-color: transparent;
+    color: $color-text;
+    /*&:hover {
+        color: $color-buttons;
+        cursor: pointer;
+    }*/ 
+    padding-left: 17px;
+    padding-right: 0;
+}
+.button-lang-ru.active {
+    color: $color-buttons;
+}
+// hero
+
+.button__colored {
+    border: none;
+    background-color: $color-buttons;
+    color: $color-background;
+    padding: 17px 73px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    &:hover, :focus {
+    box-shadow: 0 0.5em 0.5em -0.4em #ffa260;
+	transform: translatey(-0.65em);
+    color: $color-text;
+    transition: 2s;
+    cursor: pointer;
+    }
+}
+.button__colored.active {
+    color: #000;
+    background-color: #bdae82;
+}
+//portfolio 
+.portfolio__button {
+    padding-left: 250px;
+    padding-bottom: 60px;
+    >* {
+        margin-left: 1.5px;
+        margin-right: 1.5px;
+    }
+    @include mobile-tablet {
+        padding-left: 102px;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 6px;
+    }
+}
+.button__transform {
+    &_winter {
+        padding: 16px 78px 13px 78px;
+        background: transparent;
+        border: 1px solid $color-buttons;
+        color: $color-buttons;
+    
+        &:hover, :focus {
+            box-shadow: 0 0.5em 0.5em -0.4em #ffa260;
+	        transform: translatey(-0.65em);
+            color: $color-background;
+            background-color: $color-buttons;
+            transition: 2s;
+        }
+    }
+    &_spring {
+        padding: 16px 78px 13px 78px;
+        background: transparent;
+        border: 1px solid $color-buttons;
+        color: $color-buttons;
+        
+        &:hover, :focus {
+            box-shadow: 0 0.5em 0.5em -0.4em #ffa260;
+	        transform: translatey(-0.65em);
+            color: $color-background;
+            background-color: $color-buttons;
+            transition: 2s;
+        }
+    }
+    &_summer {
+        padding: 16px 71px 13px 68px;
+        background-color: transparent;
+        border: 1px solid $color-buttons;
+        color: $color-buttons;
+        &:hover, :focus {
+            box-shadow: 0 0.5em 0.5em -0.4em #ffa260;
+	        transform: translatey(-0.65em);
+            color: $color-background;
+            background-color: $color-buttons;
+            transition: 2s;
+        }
+    }
+    &_autumn {
+        padding: 16px 73px 13px 71px;
+        background: transparent;
+        border: 1px solid $color-buttons;
+        color: $color-buttons;
+        &:hover, :focus {
+            box-shadow: 0 0.5em 0.5em -0.4em #ffa260;
+	        transform: translatey(-0.65em);
+            color: $color-background;
+            background-color: $color-buttons;
+            transition: 2s;
+        }
+    }
+}
+//video 
+.video__button {
+    position: relative;
+}
+.button__player {
+    position: absolute;
+    bottom: 285px;
+    left: 44.6%;
+    border: none;
+    background-color: transparent;
+    &:hover {
+        cursor: pointer;
+    }
+    @include mobile-tablet {
+        bottom: 173px;
+        left: 44.7%;
+    }
+}
+.img-player {
+    @include mobile-tablet {
+        width: 65px;
+        height: 65px;
+    }
+}
+//price 
+.btn_price {
+    border: none;
+    background-color: $color-buttons;
+    color: $color-background;
+    padding: 16px 40px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    &:hover, :focus {
+    box-shadow: 0 0.5em 0.5em -0.4em #ffa260;
+	transform: translatey(-0.65em);
+    color: $color-text;
+    transition: 2s;
+    cursor: pointer;
+    }
+}

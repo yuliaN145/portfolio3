@@ -1,0 +1,25 @@
+.video {
+    padding-bottom: 98px;
+    @include mobile-tablet {
+        padding-bottom: 100px;
+    }
+}
+.video__img {
+    background-image: url(/portfolio3/img/wedding.jpg);
+    width: 100%;
+    height: 705px;
+    @include mobile-tablet {
+        background-image: url(/img/mobile-tablet/video-player.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 418px;
+    }
+}
+.img-wedding {
+    width: 100%;
+}
+.wrapper-video {
+    @include mobile-tablet {
+        padding: 0;
+    }
+}

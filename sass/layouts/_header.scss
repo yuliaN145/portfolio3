@@ -1,0 +1,72 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 212px;
+    align-items: center;
+    @include mobile-tablet {
+        padding-top: 18px;
+        padding-bottom: 98px;
+    }
+}
+.header__navigation {
+    margin-left: auto;
+}
+.navigation{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+    @extend %font-inter;
+    @include font ($size: 2.0rem, $style: normal, $weight: 400, $height: 5.0rem);
+    @include mobile-tablet {
+        display: block;
+        @include font ($size: 3.5rem, $style: normal, $weight: 400, $height: 8.9rem);
+        padding-top: 90px;
+        padding-left: 111px;
+    }
+}
+.navigation__link {
+    padding: 0 15px;
+    & a {
+        color: $color-text;
+        text-decoration: none;
+        &:hover {
+            cursor: pointer;
+            color: $color-buttons;
+            border-bottom: $color-buttons 1px solid;
+            transition: 2s;
+        }
+    }
+}
+.header__button {
+    @include mobile-tablet {
+        margin-left: auto;
+    }
+}
+.logo {
+    background-image: url(/portfolio3/img/logo.svg);
+    width: 50px;
+    height: 40px;
+    background-repeat: no-repeat;
+    &:hover {
+        background-image: url(/portfolio3/img/logo1.svg);
+        transition: 2s;
+    }
+}
+.slesh__button {
+    @include mobile-tablet {
+        margin-left: 7px;
+        font-size: 20px;
+    }
+}
+.icon_light {
+    background-image: url(/portfolio3/img/light-tema.svg);
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+}
+.icon-thema {
+    margin-left: 18px;
+    background-color: transparent;
+    border: none;
+}

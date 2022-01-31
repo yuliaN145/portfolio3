@@ -1,0 +1,92 @@
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+.bg-theme {
+    margin: 0 auto;
+    padding: 0;
+    color: $color-text;
+    background-color: $color-background;
+    max-width: 1440px;
+    overflow-x: hidden;
+    @extend %font-inter; 
+}
+.bg-light {
+    color: $color-background;
+    background-color: $color-text;
+    & h2 {
+        color: $color-background;
+    }
+    & line {
+        color: $color-background;
+    }
+    & .hero {
+        & p {
+            color: $color-text;
+        }
+    }
+    & .portfolio {
+        & button {
+            color: $color-background;
+        }
+    }
+    & .price {
+        & h3 {
+            color: $color-background;
+        }
+    }
+    & .contacts {
+        & .contacts__h2 {
+            color: $color-buttons;
+        }
+    }
+    & footer {
+        background-color: $color-background; 
+    }
+    & .skills {
+        & h4 {
+            color: $color-background
+        }
+    }
+}
+h1 {
+    @extend %font-merriweather;
+    @include font ($size: 6.0rem, $style: normal, $weight: 700, $height: 1.2rem);
+    margin: 0;
+    padding: 0;
+    color: $color-buttons;
+    @include mobile-tablet {
+        @include font ($size: 3.2rem, $style: normal, $weight: 400, $height: 6.4rem)
+    }
+}
+h2 {
+    @extend %font-merriweather;
+    @include font ($size: 4.0rem, $style: normal, $weight: 700, $height: 8.0rem);
+    margin: 0;
+    padding: 0;
+    color: $color-buttons;
+    @include mobile-tablet {
+        @include font ($size: 3.2rem, $style: normal, $weight: 700, $height: 4.0rem)
+    }
+}
+h3 {
+    @extend %font-merriweather;
+    @include font ($size: 2.8rem, $style: normal, $weight: 700, $height: 5.6rem);
+    margin: 0;
+    padding: 0;
+    color: $color-text;
+}
+h4 {
+    @extend %font-inter;
+    @include font ($size: 2.0rem, $style: normal, $weight: 700, $height: 4.0rem);
+    margin: 0;
+    padding: 0;
+    color: $color-text;
+}
+.bg {
+    background-image: url(/portfolio3/img/bg-hero.jpg);
+    background-repeat: no-repeat;
+    @include mobile-tablet {
+        background-image: url(/portfolio3/img/mobile-tablet/bg.jpg);
+    }
+}

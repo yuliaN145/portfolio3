@@ -1,0 +1,71 @@
+.price {
+    padding-bottom: 97px;
+    @include mobile-tablet {
+        padding-bottom: 78px;
+    }
+}
+.h2-price {
+    column-gap: 17px;
+    padding-bottom: 60px;
+    & div:first-child {
+        flex-basis: 19.5%;
+        border-bottom: blanchedalmond 1px solid;
+        @include mobile-tablet {
+            flex-basis: 18.5%;
+        }
+    }
+    & div:last-child {
+        flex-basis: 19.5%;
+        border-bottom: blanchedalmond 1px solid;
+        @include mobile-tablet {
+            flex-basis: 18.5%;
+        }
+    }
+}
+.price__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include mobile-tablet {
+        padding-left: 113px;
+        row-gap: 48px;
+    }
+}
+.card {
+    text-align: center;
+    border: $color-buttons 3px solid;
+    flex-basis: 444px;
+    column-gap: 10px;
+    padding-top: 41px;
+    @include mobile-tablet {
+        flex-basis: 415px;
+    }
+    & h3 {
+        padding-bottom: 19px;
+    }
+    &-price {
+        @extend %font-merriweather;
+        @include font ($size: 2.4rem, $style: normal, $weight: 700, $height: 4.8rem);
+        color: $color-buttons;
+        padding-right: 2px;
+    }
+    & p {
+        @extend %font-inter;
+        @include font ($size: 1.8rem, $style: normal, $weight: 400, $height: 3.6rem);
+        padding-top: 22px;
+        padding-bottom: 39px;
+        margin: 0;
+        & span {
+            display: block;
+        }
+    }
+}
+.button__price {
+    padding-bottom: 42px;
+    @include mobile-tablet {
+        padding-bottom: 40px;
+    }
+}
+
+
+

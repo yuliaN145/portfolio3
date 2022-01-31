@@ -1,0 +1,29 @@
+.hero {
+    margin-bottom: 98px;
+}
+.hero__content{
+    padding-left: 60px;
+    width: 470px;
+    padding-bottom: 330px;
+    & p {
+        @extend %font-inter;
+        @include font ($size: 2.0rem, $style: normal, $weight: 400, $height: 4.0rem);
+        margin: 0;
+        padding-bottom: 24px;
+        @include mobile-tablet {
+            @include font ($size: 2.0rem, $style: normal, $weight: 400, $height: 2.4rem);
+            padding-bottom: 59px;
+        }
+    }
+    @include mobile-tablet {
+        padding-left: 0;
+        width: 415px;
+        padding-bottom: 151px;
+    }
+}
+.hero__title {
+    padding-bottom: 65px;
+    @include mobile-tablet {
+        padding-bottom: 19px;
+    }
+}
