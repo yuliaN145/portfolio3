@@ -1,6 +1,8 @@
 const portfolioBtn = document.querySelector('.portfolio-btn-winter');
 const portfolioImages = document.querySelectorAll('.portfolio-image');
 
+
+
  portfolioBtn.addEventListener('click', () => {
     portfolioImages.forEach((img, index) => img.src = `./img/winter/${index + 1}.jpg`);
     portfolioBtn.classList.toggle('active');

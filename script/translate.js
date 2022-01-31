@@ -41,6 +41,8 @@ const i18Obj = {
       'price-description-3-span-4': 'Readiness 1 week',
       'price-description-3-span-5': 'Make up, visage, hairstyle',
       'order': 'Order shooting',
+      'order1': 'Order shooting',
+      'order2': 'Order shooting',
       'contact-me': 'Contact me',
       'send-message': 'Send message'
     },
@@ -86,12 +88,14 @@ const i18Obj = {
       'price-description-3-span-4': 'Готовность через 1 неделю',
       'price-description-3-span-5': 'Макияж, визаж, прическа',
       'order': 'Заказать съемку',
+      'order1': 'Заказать съемку',
+      'order2': 'Заказать съемку',
       'contact-me': 'Свяжитесь со мной',
       'send-message': 'Отправить'
     }
   }
 
-let changeLanguage = (dictionary, lang) => {
+const changeLanguage = (dictionary, lang) => {
     for (id in dictionary[lang]) {
         console.log(`${id}:${dictionary[lang][id]}`);
         let element = document.getElementById(id);
@@ -103,8 +107,8 @@ let changeLanguage = (dictionary, lang) => {
 }
 
 
-let en = document.getElementById("en").addEventListener("click", function () {changeLanguage(i18Obj, "en")});
-let ru = document.getElementById("ru").addEventListener("click", function () {changeLanguage(i18Obj, "ru")});
+document.getElementById("en").addEventListener("click", function () {changeLanguage(i18Obj, "en")});
+document.getElementById("ru").addEventListener("click", function () {changeLanguage(i18Obj, "ru")});
 
 const btnLang = document.querySelector('.button-lang-en');
 
@@ -119,16 +123,3 @@ btnLangRu.addEventListener('click', function () {
 })
    
   
-function setLocalStorage() {
-  localStorage.setItem('lang', ru);
-}
-window.addEventListener('beforeunload', setLocalStorage)
-  
-
-function getLocalStorage() {
-  if(localStorage.getItem('lang')) {
-    const lang = localStorage.getItem('lang');
-    changeLanguage(lang);
-  }
-}
-window.addEventListener('load', getLocalStorage)
